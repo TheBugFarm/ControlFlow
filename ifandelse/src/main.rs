@@ -10,6 +10,12 @@ fn main() {
         println!("Lots of rain");
     }
 
+    match season {
+        "summer" => println!("school is out"),            
+        "winter" => println!("Brrrr, soo cold"),
+        _ => println!("lots of rain"), 
+    }
+
     even_or_odd(17);
     even_or_odd(100);
 }
