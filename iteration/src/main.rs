@@ -1,10 +1,7 @@
 fn main() {
     let mut seconds = 21;
-    loop {
-        if seconds <= 0 {
-            println!("Blastoff");
-            break;
-        }
+
+    while seconds > 0 {
         if seconds % 2 == 0 {
             println!("{seconds} seconds (even number), skipping 3 seconds..");
             seconds -= 5;
@@ -13,4 +10,5 @@ fn main() {
         println!("{seconds} seconds to blastoff..");
         seconds -= 1;
     }
+    println!("Blastoff");
 }
